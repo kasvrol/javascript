@@ -1,0 +1,19 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "estudos sobre javascript para aprofundar o conhecimento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kasvrol"
+  },
+  "author": "Ana Karolina dos Santos",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
