@@ -1,18 +1,26 @@
-let arrayVazia = [];
+//dividindo um array através do método slice
+const nome = ['João', 'Juliana', 'Ana', 'Caio', 'Lara', 'Marjorie', 'Guilherme', 'Aline', 'Fabiana', 'Andre', 'Carlos', 'Paulo', 'Bia', 'Vivian', 'Isabela', 'Vinícius', 'Renan', 'Renata', 'Daisy', 'Camilo']
 
-console.log(arrayVazia)
-console.log(arrayVazia.length)
 
-// let arrayVazia = [];
-console.log(arrayVazia[0])
+// salaA pega a primeira parte do array divido, pois está indicando a posição 0 - que é a primeira pela lógica de casas do array.
+const salaA = nome.slice(0, nome.length/2)
 
-arrayVazia = [,,,];
-console.log(arrayVazia.length)// número de posições dentro do array
-console.log(arrayVazia[0]) 
-console.log(arrayVazia[1])
-console.log(arrayVazia[2])
+// salaB pega a segunda parte do array divido
+const salaB = nome.slice( nome.length/2)
 
-console.log(arrayVazia.length)// número de posições dentro do array
-arrayVazia.push(50)// empurrou o item 50 para dentro do array na posição 4
-console.log(arrayVazia)// número de posições dentro do array, com 3 posições indefinidas e a ultima com o número 50
-console.log(arrayVazia.length)// número de posições dentro do array
+console.log(salaA)
+console.log(salaB)
+
+//removendo 2 elementos do array a partir da posição 1 (segunda posição) e acrescentando um elemento ('Rodrigo) através do método splice
+const listaDeChamada = ['João', 'Ana', 'Caio', 'Lara', 'Marjorie', 'Léo']
+
+listaDeChamada.splice(1, 2, 'Rodrigo')
+
+console.log(listaDeChamada)
+
+animaisDoAquario = ['🐋', '🐙', '🐬', '🦈']
+
+animaisDoAquario.splice(1,0,'🐠')
+animaisDoAquario.splice(3,2,'🐟')
+
+console.log(animaisDoAquario)//[ '🐋', '🐠', '🐙', '🐟' ]
