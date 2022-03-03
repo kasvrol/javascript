@@ -30,6 +30,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JavaScript](https://www.javascript.com/)
 - [Node.js](https://nodejs.org/en/)
 
+## Caso encontre algum erro, contacte-me
+
+* E-mail
+```bash
+santosak1999@gmail.com
+```
+
 ## Autora
 
 - [Ana Karolina](https://github.com/kasvrol)
