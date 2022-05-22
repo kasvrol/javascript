@@ -5,5 +5,8 @@ const cliente = {
     email: "andre@email.com",
 };
 
-// Método substring [.substring(a, b)]: permite percorrer uma string e capturar os elementos da primeira posição (a) até uma posição antes do segundo número (b).
-console.log(cliente.cpf.substring(0, 3));
+const chaves = ["nome", "idade", "cpf", "email"];
+
+// Método acessar objeto através da um array
+// imprime a posição do array que é identica a posição do objeto
+console.log(cliente["nome"]);
