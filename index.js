@@ -1,19 +1,14 @@
-const objPersonagem = {
-    nome: "Gandalf",
-    classe: "mago",
-    nivel: "20",
-    aliado: {
-        nome: "Saruman",
-        classe: "mago",
+const cliente = {
+    nome: "André",
+    idade: 36,
+    cpf: "12345678910",
+    email: "andre@email.com",
+    saldo: 100,
+    depositar: function (valor) {
+        this.saldo += valor;
     },
-    status: "desaparecido",
 };
 
-console.log(objPersonagem.aliado); //undefined
-console.log(objPersonagem.status);
-
-delete objPersonagem.aliado;
-delete objPersonagem["status"];
-
-console.log(objPersonagem.aliado); //undefined
-console.log(objPersonagem.status);
+console.log(cliente.saldo);
+cliente.depositar(50);
+console.log(cliente.saldo);

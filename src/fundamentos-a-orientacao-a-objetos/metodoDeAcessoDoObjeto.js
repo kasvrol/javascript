@@ -23,3 +23,63 @@ chaves.forEach((info) => console.log(cliente[info]));
 // Método acessar objeto através da um array
 // imprime o valor do objeto que seja identico ao requesitado
 console.log(cliente["nome"]);
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+const cliente2 = {
+    nome: "André",
+    idade: 36,
+    cpf: "12345678910",
+    email: "andre@email.com",
+    dependentes: [
+        {
+            nome: "Samira Mariazinha",
+            parentesco: "filha",
+            dataNasc: "04/01/2013",
+        },
+        {
+            nome: "Samila Mariquinha",
+            parentesco: "filha",
+            dataNasc: "04/01/2012",
+        },
+        { nome: "Samia Maria", parentesco: "filha", dataNasc: "04/01/2014" },
+    ],
+};
+
+const filhaMaisNova = cliente2.dependentes.filter(
+    (dependente) => dependente.dataNasc === "04/01/2014"
+);
+
+//Método de acessopor filtro
+console.log(filhaMaisNova[0].nome);
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Método de inserção de informação
+
+const cliente3 = {
+    nome: "André",
+    idade: 36,
+    cpf: "12345678910",
+    email: "andre@email.com",
+    dependentes: [
+        {
+            nome: "Samira Mariazinha",
+            parentesco: "filha",
+            dataNasc: "04/01/2013",
+        },
+        {
+            nome: "Samila Mariquinha",
+            parentesco: "filha",
+            dataNasc: "04/01/2012",
+        },
+    ],
+};
+
+cliente3.dependentes.push({
+    nome: "Samia Maria",
+    parentesco: "filha",
+    dataNasc: "04/01/2014",
+});
+
+console.log(cliente3.dependentes);
