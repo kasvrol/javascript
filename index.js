@@ -5,7 +5,7 @@ const cliente = {
     email: "andre@email.com",
     saldo: 100,
     depositar: function (valor) {
-        this.saldo += valor;
+        this.saldo += valor; //this: esta propriedade do objeto
     },
 };
 
