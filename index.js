@@ -1,14 +1,11 @@
-const cliente = {
-    nome: "André",
-    idade: 36,
-    cpf: "12345678910",
-    email: "andre@email.com",
-    saldo: 100,
-    depositar: function (valor) {
-        this.saldo += valor; //this: esta propriedade do objeto
-    },
+const objPersonagemAlteracao = {
+    nome: "Gandalf",
+    classe: "mago",
+    nivel: "20",
 };
 
-console.log(cliente.saldo);
-cliente.depositar(50);
-console.log(cliente.saldo);
+const objPersonagemAlteracao2 = objPersonagemAlteracao;
+objPersonagemAlteracao2.nome = "Gandalf, o Cinzento";
+
+console.log(objPersonagemAlteracao.nome); //Gandalf, o Cinzento
+console.log(objPersonagemAlteracao2.nome); //Gandalf, o Cinzento
