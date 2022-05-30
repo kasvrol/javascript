@@ -16,5 +16,13 @@ class Cliente {
 }
 
 const andre = new Cliente('André', 'andre@email.com', '12345678910', 100)
-andre.exibirSaldo()
+console.log(andre)
+
+// Cliente {
+//     nome: 'André',
+//     email: 'andre@email.com',
+//     cpf: '12345678910',
+//     saldo: 100
+//   }
+
 console.log(andre)
